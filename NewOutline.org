@@ -16,6 +16,15 @@ This is the file for brainstorming before I start modifying the main tutorial
       + learning objectives
       + steps
       + hints
+  + Demonstrate multiple views
+    + this is related to the many-many many-one relationships mentioned earlier
+      + what would make good examples?
+	+ How about a microblog that displays user information next to tweets
+	  + but also has a list in the lefthand side with all the current users and, mayhaps, their total number of tweets and some other different details. We want to keep all of the data synced to the model and with its own user interface componenets.
+	+ Social network of professional relationships, call it "cuff linked"
+	  + display multiple users and, say, two layers deep of connections to other people
+	  + if a connection is added in one place between people then it should update everywhere else in the visual hierarchy
+
 * New Outline
 ** Simple Counter
 *** Model

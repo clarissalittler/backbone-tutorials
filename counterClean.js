@@ -2,13 +2,12 @@
 $(document).ready( function () {
 
 var Counter = Backbone.Model.extend({
-    defaults : {"value" : 0}
+    defaults : {"value" : 0},
+    inc : function () {
+        var val = this.get("value");
+        this.set("value", val+1);
+    }
 });
-
-Counter.prototype.inc = function () {
-    var val = this.get("value");
-    this.set("value", val+1);
-}
 
 var CounterView = Backbone.View.extend({
     render: function () {

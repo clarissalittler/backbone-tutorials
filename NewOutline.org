@@ -29,6 +29,7 @@ This is the file for brainstorming before I start modifying the main tutorial
 ** Simple Counter
 *** Model
 *** View
+*** Multiple Views connected to the same model
 ** Counter with Server
     Explain
     + Setting basic URLRoot

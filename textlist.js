@@ -2,12 +2,11 @@
 $(document).ready( function () {
 
 var TextModel = Backbone.Model.extend({
-    defaults : {"value" : ""}
+    defaults : {"value" : ""},
+    replace : function (str) {
+        this.set("value", str);
+    }
 });
-
-TextModel.prototype.replace = function (str) {
-    this.set("value", str);
-};
 
 var TextView = Backbone.View.extend({
     render: function () {

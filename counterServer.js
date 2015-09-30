@@ -18,7 +18,7 @@ app.get('/counter/1', function (req, res) {
 app.put('/counter/1', function (req, res) {
     console.log(req.body);
     counter1 = req.body.value;
-    res.end();
+    res.send({});
 });
 
 app.listen(3000, function () {
